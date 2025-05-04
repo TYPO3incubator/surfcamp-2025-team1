@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:reservations/Resources/Private/Language/locallang_db.xlf" date="2025-05-04T17:38:00Z" product-name="reservations">
+		<header/>
+		<body>
+			<trans-unit id="tx_reservations_domain_model_reservation.reservation">
+				<source>Reservation</source>
+			</trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.first_name">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.last_name">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.number_of_persons">
+                <source>Number of Persons</source>
+            </trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.telephone">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_reservations_domain_model_reservation.reservation_time">
+                <source>Reservation Time</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
