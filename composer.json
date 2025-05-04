@@ -38,6 +38,7 @@
         "php": ">=8.3.0",
         "bk2k/bootstrap-package": "^15.0",
         "typo3-incubator/menu": "@dev",
+        "typo3-incubator/opening-hours": "@dev",
         "typo3-incubator/reservations": "@dev",
         "typo3-incubator/surfcamp-base": "@dev",
         "typo3-incubator/theme-fcbigfoot": "^0.0.1",

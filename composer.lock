@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a8b35096037b8da39ca05a51bf855b4",
+    "content-hash": "51c0be54f545fd4fd7397a942048ee0e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5339,6 +5339,42 @@
             }
         },
         {
+            "name": "typo3-incubator/opening-hours",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "packages/opening-hours",
+                "reference": "a33c63acf919a58fda74a1ff2becafba676ff2aa"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-extbase": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "opening_hours"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3Incubator\\OpeningHours\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Configure opening hours.",
+            "homepage": "https://www.google.de",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3-incubator/reservations",
             "version": "dev-develop",
             "dist": {
@@ -7477,6 +7513,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "typo3-incubator/menu": 20,
+        "typo3-incubator/opening-hours": 20,
         "typo3-incubator/reservations": 20,
         "typo3-incubator/surfcamp-base": 20
     },
