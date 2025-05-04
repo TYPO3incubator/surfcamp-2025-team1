@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38f8053da4ed60c4a51284b4930b7b9d",
+    "content-hash": "3a8b35096037b8da39ca05a51bf855b4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5301,6 +5301,85 @@
             "time": "2025-04-04T10:10:11+00:00"
         },
         {
+            "name": "typo3-incubator/menu",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "packages/menu",
+                "reference": "08f3d16b676de24cbcbd9d829d31ad2fa351a2ec"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-extbase": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "menu"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Typo3Incubator\\Menu\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Julia Miller",
+                    "email": "julia.miller@hdnet.de"
+                }
+            ],
+            "description": "Organize food and drinks in categories",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "typo3-incubator/reservations",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "packages/reservations",
+                "reference": "933c6761b6850e0aedefd2dee0821d020d70189d"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4",
+                "typo3/cms-rte-ckeditor": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "reservations"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3Incubator\\Reservations\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marno Schmigotzki",
+                    "email": "m.schmigotzk@familie-redlich.de"
+                }
+            ],
+            "description": "Enable reservations and their management",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3-incubator/surfcamp-base",
             "version": "dev-develop",
             "dist": {
@@ -7397,6 +7476,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "typo3-incubator/menu": 20,
+        "typo3-incubator/reservations": 20,
         "typo3-incubator/surfcamp-base": 20
     },
     "prefer-stable": true,
