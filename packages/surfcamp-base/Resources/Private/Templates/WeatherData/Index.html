@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+    <div>
+        <p>Humidity: {weatherData.humidity} %</p>
+        <p>Temperatur: {weatherData.temp} °C</p>
+        <p>Alarm:
+            <f:if condition="{weatherData.alarm}">
+                <f:then>🔥 All bad, help!!</f:then>
+                <f:else>✅ All good 🎊</f:else>
+            </f:if>
+        </p>
+        <p>Brightness: {weatherData.humidity} %</p>
+    </div>
+</html>
+
+<meta http-equiv="Refresh" content="5">

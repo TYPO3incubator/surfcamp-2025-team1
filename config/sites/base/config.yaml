@@ -1,4 +1,8 @@
 base: '%env(SITE_BASE)%'
+baseVariants:
+  -
+    base: 'https://5d36-169-155-235-244.ngrok-free.app'
+    condition: 'applicationContext == "Development"'
 dependencies:
   - typo3-incubator/surfcamp-base
 languages:
