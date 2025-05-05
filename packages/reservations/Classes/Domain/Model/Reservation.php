@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3Incubator\Reservations\Domain\Model\Reservation;
+namespace TYPO3Incubator\Reservations\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
