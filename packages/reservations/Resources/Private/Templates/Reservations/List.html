@@ -1,0 +1,67 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Module" />
+
+<f:section name="Content">
+    <h1><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.management" /></h1>
+    <f:if condition="{reservations}">
+        <f:then>
+            <div class="table-fit">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.reservation_time" /></th>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.last_name" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <f:for each="{reservations}" as="reservation">
+                        <tr>
+                            <td class="align-top">
+                                {reservation.reservation_time}
+                            </td>
+                            <td class="align-top">
+                                {reservation.last_name}
+                            </td>
+                            <td class="align-top nowrap col-control">
+                                <div class="btn-group">
+                                    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations')}</f:variable>
+                                    <be:link.editRecord
+                                        uid="{reservation.uid}"
+                                        table="tx_reservations_domain_model_reservation"
+                                        returnUrl="{returnUrl}"
+                                        class="btn btn-default"
+                                        title="{f:translate(key:'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.edit')}"
+                                    >
+                                        <core:icon identifier="actions-open" />
+                                    </be:link.editRecord>
+                                    <a class="btn btn-default t3js-modal-trigger"
+                                       href="{be:moduleLink(route:'tce_db', query:'cmd[tx_reservations_domain_model_reservation][{reservation.uid}][delete]=1', arguments:'{redirect: returnUrl}')}"
+                                       title="{f:translate(key: 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.cancelNotice')}"
+                                       data-severity="warning"
+                                       data-title="{f:translate(key: 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.cancel')}"
+                                       data-bs-content="{f:translate(key: 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.cancelNotice')}"
+                                       data-button-close-text="{f:translate(key: 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.noCancel')}"
+                                    >
+                                        <core:icon identifier="actions-delete" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </f:for>
+                    </tbody>
+                </table>
+            </div>
+        </f:then>
+        <f:else>
+            <f:be.infobox state="{f:constant(name: 'TYPO3\CMS\Fluid\ViewHelpers\Be\InfoboxViewHelper::STATE_INFO')}" title="{f:translate(key: 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:noReservationsAvailable')}">
+                <p><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:noReservations"/></p>
+            </f:be.infobox>
+        </f:else>
+    </f:if>
+</f:section>
+</html>
