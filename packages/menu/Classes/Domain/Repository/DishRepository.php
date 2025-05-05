@@ -1,6 +1,6 @@
 <?php
 
-namespace Typo3Incubator\Menu\Domain\Repository;
+namespace TYPO3Incubator\Menu\Domain\Repository;
 
 class DishRepository extends AbstractMenuRepository
 {

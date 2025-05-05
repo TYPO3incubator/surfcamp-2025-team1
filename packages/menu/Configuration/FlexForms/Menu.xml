@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Menu</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.menuDishes>
+                        <TCEforms>
+                            <label>Menu Dishes</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_menu_domain_model_dishes</allowed>
+                                <foreign_table>tx_menu_domain_model_dishes</foreign_table>
+                                <size>5</size>
+                            </config>
+                        </TCEforms>
+                    </settings.menuDishes>
+                    <settings.menuDrinks>
+                    <TCEforms>
+                        <label>Menu Drinks</label>
+                        <config>
+                            <type>group</type>
+                            <internal_type>db</internal_type>
+                            <allowed>tx_menu_domain_model_drinks</allowed>
+                            <foreign_table>tx_menu_domain_model_drinks</foreign_table>
+                            <size>5</size>
+                        </config>
+                    </TCEforms>
+                    </settings.menuDrinks>
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

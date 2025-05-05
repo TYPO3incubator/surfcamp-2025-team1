@@ -1,13 +1,13 @@
 <?php
 
-namespace Typo3Incubator\Menu\Classes\Controller;
+namespace TYPO3Incubator\Menu\Controller;
 
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException;
 use TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException;
-use Typo3Incubator\Menu\Domain\Model\Drink;
-use Typo3Incubator\Menu\Domain\Repository\DrinkRepository;
+use TYPO3Incubator\Menu\Domain\Model\Drink;
+use TYPO3Incubator\Menu\Domain\Repository\DrinkRepository;
 
 class DrinkController extends ActionController
 {

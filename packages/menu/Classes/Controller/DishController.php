@@ -1,13 +1,14 @@
 <?php
 
-namespace Typo3Incubator\Menu\Classes\Controller;
+namespace TYPO3Incubator\Menu\Controller;
 
 use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException;
 use TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException;
-use Typo3Incubator\Menu\Domain\Model\Dish;
-use Typo3Incubator\Menu\Domain\Repository\DishRepository;
+use TYPO3Incubator\Menu\Domain\Model\Dish;
+use TYPO3Incubator\Menu\Domain\Repository\DishRepository;
 
 class DishController extends ActionController
 {

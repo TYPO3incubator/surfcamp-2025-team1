@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Typo3Incubator\Menu\Domain\Model;
+namespace TYPO3Incubator\Menu\Domain\Model;
 
 class Dish extends AbstractMenuItem
 {

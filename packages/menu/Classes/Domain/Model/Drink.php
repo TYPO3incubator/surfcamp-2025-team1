@@ -1,6 +1,6 @@
 <?php
 
-namespace Typo3Incubator\Menu\Domain\Model;
+namespace TYPO3Incubator\Menu\Domain\Model;
 
 class Drink extends AbstractMenuItem
 {

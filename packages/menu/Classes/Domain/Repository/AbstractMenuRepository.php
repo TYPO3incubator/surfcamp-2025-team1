@@ -1,9 +1,9 @@
 <?php
 
-namespace Typo3Incubator\Menu\Domain\Repository;
+namespace TYPO3Incubator\Menu\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\Repository;
-use Typo3Incubator\Menu\Domain\Model\Dish;
+use TYPO3Incubator\Menu\Domain\Model\Dish;
 
 class AbstractMenuRepository extends Repository
 {
