@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-$GLOBALS['TCA']['tx_opening_hours_company_vacation'] = [
+$GLOBALS['TCA']['tx_openinghours_domain_model_companyvacation'] = [
     'ctrl' => [
         'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_company_vacation',
         'label' => 'start_date',

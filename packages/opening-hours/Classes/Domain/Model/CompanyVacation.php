@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpeningHours\Domain\Model;
+namespace TYPO3Incubator\OpeningHours\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 

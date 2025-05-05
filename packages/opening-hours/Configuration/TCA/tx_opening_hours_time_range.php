@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-$GLOBALS['TCA']['tx_opening_hours_time_range'] = [
+$GLOBALS['TCA']['tx_openinghours_domain_model_timerange'] = [
     'ctrl' => [
         'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_time_range',
         'label' => 'start_time',
