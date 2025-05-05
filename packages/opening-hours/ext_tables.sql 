@@ -1,0 +1,8 @@
+CREATE TABLE tx_opening_hours_company_vacation (
+);
+
+CREATE TABLE tx_opening_hours_date_range (
+);
+
+CREATE TABLE tx_opening_hours_opening_hours (
+);

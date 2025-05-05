@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-04-07UTC09:57:000">
+        <header />
+        <body>
+            <!-- Time range -->
+            <trans-unit id="tx_opening_hours_time_range">
+                <source>Time range</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_time_range.startTime">
+                <source>Start time</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_time_range.endTime">
+                <source>End time</source>
+            </trans-unit>
+
+            <!-- Company vacation -->
+            <trans-unit id="tx_opening_hours_company_vacation">
+                <source>Company vacation</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_company_vacation.startDate">
+                <source>Start date</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_company_vacation.endDate">
+                <source>End date</source>
+            </trans-unit>
+
+            <!-- Opening hour -->
+            <trans-unit id="tx_opening_hours_opening_hour">
+                <source>Opening Hour</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.description">
+                <source>If not checked, this day is a closing day.</source>
+            </trans-unit>
+
+            <trans-unit id="tx_opening_hours_opening_hour.monday">
+                <source>Monday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.tuesday">
+                <source>Tuesday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.wednesday">
+                <source>Wednesday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.thursday">
+                <source>Thursday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.friday">
+                <source>Friday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.saturday">
+                <source>Saturday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.sunday">
+                <source>Sunday</source>
+            </trans-unit>
+            <trans-unit id="tx_opening_hours_opening_hour.timeRanges">
+                <source>Time ranges</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
