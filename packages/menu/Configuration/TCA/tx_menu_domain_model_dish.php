@@ -39,7 +39,6 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 10,
-                'default' => 0.00,
                 'min' => 0.00,
                 'required' => true,
             ],
