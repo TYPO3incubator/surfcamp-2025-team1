@@ -3,6 +3,10 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2025-04-07UTC09:57:000">
         <header />
         <body>
+            <trans-unit id="tx_opening_hours.pluginTitle">
+                <source>Opening hours</source>
+            </trans-unit>
+
             <!-- Time range -->
             <trans-unit id="tx_opening_hours_time_range">
                 <source>Time range</source>
@@ -18,6 +22,10 @@
             <trans-unit id="tx_opening_hours_company_vacation">
                 <source>Company vacation</source>
             </trans-unit>
+            <!-- Company vacation -->
+            <trans-unit id="tx_opening_hours_company_vacation.pluginTitle">
+                <source>Company vacation</source>
+            </trans-unit>
             <trans-unit id="tx_opening_hours_company_vacation.startDate">
                 <source>Start date</source>
             </trans-unit>
@@ -27,7 +35,7 @@
 
             <!-- Opening hour -->
             <trans-unit id="tx_opening_hours_opening_hour">
-                <source>Opening Hour</source>
+                <source>Opening hour</source>
             </trans-unit>
             <trans-unit id="tx_opening_hours_opening_hour.description">
                 <source>If not checked, this day is a closing day.</source>

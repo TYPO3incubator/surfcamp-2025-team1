@@ -1,0 +1,103 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:for as="openingHour" each="{openingHours}">
+        Monday:
+        <f:if condition="{openingHour.monday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesMonday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+        Tuesday:
+        <f:if condition="{openingHour.tuesday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesTuesday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+        Wednesday:
+        <f:if condition="{openingHour.wednesday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesWednesday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+        Thursday:
+        <f:if condition="{openingHour.thursday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesThursday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+        Friday:
+        <f:if condition="{openingHour.friday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesFriday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+        Saturday:
+        <f:if condition="{openingHour.saturday}">
+            <f:then>
+                <f:for as="timeRange" each="{openingHour.timeRangesSaturday}">
+                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                    </f:if>
+                </f:for>
+            </f:then>
+            <f:else>
+                Closing day
+            </f:else>
+        </f:if>
+        <br>
+    Sunday:
+    <f:if condition="{openingHour.sunday}">
+        <f:then>
+            <f:for as="timeRange" each="{openingHour.timeRangesSunday}">
+                <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
+                    <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                </f:if>
+            </f:for>
+        </f:then>
+        <f:else>
+            Closing day
+        </f:else>
+    </f:if>
+</f:for>
+
+</html>
+
