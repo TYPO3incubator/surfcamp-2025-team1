@@ -1,8 +1,8 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:dish.title',
-        'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:dish.label',
+        'title' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:dish.be_title',
+        'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',
@@ -45,4 +45,9 @@ return [
             ],
         ],
     ],
+    'types' => [
+        '0' => [
+            'showitem' => 'title, description, price,',
+        ],
+    ]
 ];

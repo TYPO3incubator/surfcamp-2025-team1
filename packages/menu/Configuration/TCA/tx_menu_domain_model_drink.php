@@ -1,8 +1,8 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.title',
-        'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.label',
+        'title' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.be_title',
+        'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',
@@ -28,9 +28,8 @@ return [
             'exclude' => 0,
             'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.size',
             'config' => [
-                'type' => 'text',
-                'cols' => 30,
-                'rows' => 5,
+                'type' => 'input',
+                'size' => 10,
                 'min' => 0.00,
                 'required' => true,
             ],
@@ -46,4 +45,9 @@ return [
             ],
         ],
     ],
+    'types' => [
+        '0' => [
+            'showitem' => 'title, size, price,',
+        ],
+    ]
 ];
