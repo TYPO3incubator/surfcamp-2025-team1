@@ -35,9 +35,9 @@ class Reservation extends AbstractEntity
     protected string $email = '';
 
     /**
-     * @var \DateTime|null
+     * @var \DateTime
      */
-    protected ?\DateTime $reservationTime = null;
+    protected \DateTime $reservationTime;
 
     /**
      * @return string
@@ -133,10 +133,10 @@ class Reservation extends AbstractEntity
     }
 
     /**
-     * @param \DateTime|null $reservationTime
+     * @param \DateTime $reservationTime
      * @return void
      */
-    public function setReservationTime(?\DateTime $reservationTime): void
+    public function setReservationTime(\DateTime $reservationTime): void
     {
         $this->reservationTime = $reservationTime;
     }
