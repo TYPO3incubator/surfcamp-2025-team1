@@ -6,19 +6,22 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3Incubator\Reservations\Domain\Repository\ReservationRepository;
 
 #[AsController]
 class ReservationsController extends ActionController
 {
     public function __construct(
         protected readonly ModuleTemplateFactory $moduleTemplateFactory,
+        protected readonly ReservationRepository $reservationRepository,
     ) {}
 
     public function listAction(ServerRequestInterface $request): ResponseInterface
     {
         $moduleTemplate = $this->moduleTemplateFactory->create($request);
 
-        $moduleTemplate->assign('reservations', [['uid' => 1, 'last_name' => 'Test', 'reservation_time' => '2025-05-06 20:00:00'],['uid' => 1, 'last_name' => 'Test', 'reservation_time' => '2025-05-06 21:00:00']]);
+        $reservations = $this->reservationRepository->findAll();
+        $moduleTemplate->assign('reservations', $reservations);
 
         return $moduleTemplate->renderResponse('Reservations/List');
     }
