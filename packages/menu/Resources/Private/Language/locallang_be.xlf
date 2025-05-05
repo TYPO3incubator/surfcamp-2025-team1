@@ -3,7 +3,7 @@
     <file source-language="en" datatype="plaintext">
 
         <body>
-            <trans-unit id="plugin.MenuList">
+            <trans-unit id="plugin.menu">
                 <source>Menu</source>
             </trans-unit>
             <trans-unit id="dish.be_title">
