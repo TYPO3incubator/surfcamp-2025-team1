@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.reservation',
-        'label' => 'last_name',
+        'label' => 'reservation_time',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -14,7 +14,7 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'searchFields' => 'first_name,last_name,email,telephone',
+        'searchFields' => 'first_name,last_name,email,telephone,reservation_time',
         'iconfile' => 'EXT:reservations/Resources/Public/Icons/tx_reservations_domain_model_reservation.svg',
     ],
     'types' => [
