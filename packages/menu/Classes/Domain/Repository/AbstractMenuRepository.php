@@ -12,8 +12,8 @@ class AbstractMenuRepository extends Repository
     /**
      * Receive menu items by uids
      *
-     * @param array<int> $uids Array of UIDs.
-     * @return array<Dish> Array of Menu objects.
+     * @param array<int> $uids array of uids.
+     * @return array<Dish> array of menu objects.
      */
     public function findByUids(array $uids): array
     {
