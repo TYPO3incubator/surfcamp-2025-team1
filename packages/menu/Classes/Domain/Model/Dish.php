@@ -6,7 +6,7 @@ namespace TYPO3Incubator\Menu\Domain\Model;
 
 class Dish extends AbstractMenuItem
 {
-    protected string $description = "";
+    protected string $description = '';
 
     public function getDescription(): string
     {
