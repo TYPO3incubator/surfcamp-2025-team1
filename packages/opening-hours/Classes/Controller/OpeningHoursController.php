@@ -12,9 +12,7 @@ class OpeningHoursController extends ActionController
 {
     public function __construct(
         private readonly OpeningHoursRepository $openingHoursRepository,
-    )
-    {
-    }
+    ) {}
     public function indexAction(): ResponseInterface
     {
         $openingHours = $this->openingHoursRepository->findAll();

@@ -1,6 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:for as="openingHour" each="{openingHours}">
-        Monday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.monday" />:
         <f:if condition="{openingHour.monday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesMonday}">
@@ -10,11 +11,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-        Tuesday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.tuesday" />:
         <f:if condition="{openingHour.tuesday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesTuesday}">
@@ -24,11 +25,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-        Wednesday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.wednesday" />:
         <f:if condition="{openingHour.wednesday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesWednesday}">
@@ -38,11 +39,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-        Thursday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.thursday" />:
         <f:if condition="{openingHour.thursday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesThursday}">
@@ -52,11 +53,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-        Friday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.friday" />:
         <f:if condition="{openingHour.friday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesFriday}">
@@ -66,11 +67,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-        Saturday:
+        <f:translate key="tx_openinghours_domain_model_openinghours.saturday" />:
         <f:if condition="{openingHour.saturday}">
             <f:then>
                 <f:for as="timeRange" each="{openingHour.timeRangesSaturday}">
@@ -80,11 +81,11 @@
                 </f:for>
             </f:then>
             <f:else>
-                Closing day
+                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
             </f:else>
         </f:if>
         <br>
-    Sunday:
+    <f:translate key="tx_openinghours_domain_model_openinghours.sunday" />:
     <f:if condition="{openingHour.sunday}">
         <f:then>
             <f:for as="timeRange" each="{openingHour.timeRangesSunday}">
@@ -94,7 +95,7 @@
             </f:for>
         </f:then>
         <f:else>
-            Closing day
+            <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
         </f:else>
     </f:if>
 </f:for>

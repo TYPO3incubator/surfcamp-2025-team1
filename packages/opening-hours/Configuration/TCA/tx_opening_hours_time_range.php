@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $GLOBALS['TCA']['tx_openinghours_domain_model_timerange'] = [
     'ctrl' => [
-        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_time_range',
+        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange',
         'label' => 'start_time',
         'default_sortby' => 'ORDER BY start_time',
         'tstamp' => 'tstamp',
@@ -27,7 +27,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_timerange'] = [
     ],
     'columns' => [
         'start_time' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_time_range.startTime',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange.startTime',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',
@@ -35,7 +35,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_timerange'] = [
             ],
         ],
         'end_time' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_time_range.endTime',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange.endTime',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',

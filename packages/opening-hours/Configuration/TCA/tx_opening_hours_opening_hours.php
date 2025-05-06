@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
     'ctrl' => [
-        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour',
+        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours',
         'label' => 'uid',
         'default_sortby' => 'ORDER BY uid',
         'tstamp' => 'tstamp',
@@ -27,91 +27,91 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
     ],
     'columns' => [
         'monday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.monday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.monday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'tuesday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.tuesday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.tuesday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'wednesday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.wednesday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.wednesday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'thursday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.thursday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.thursday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'friday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.friday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.friday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'saturday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.saturday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.saturday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'sunday' => [
-            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.description',
+            'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
                 'type' => 'check',
                 'items' => [
                     [
-                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.sunday',
+                        'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.sunday',
                     ],
                 ],
             ],
             'onChange' => 'reload',
         ],
         'time_ranges_monday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -124,7 +124,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:monday:REQ:true',
         ],
         'time_ranges_tuesday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -137,7 +137,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:tuesday:REQ:true',
         ],
         'time_ranges_wednesday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -150,7 +150,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:wednesday:REQ:true',
         ],
         'time_ranges_thursday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -163,7 +163,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:thursday:REQ:true',
         ],
         'time_ranges_friday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -176,7 +176,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:friday:REQ:true',
         ],
         'time_ranges_saturday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',
@@ -189,7 +189,7 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
             'displayCond' => 'FIELD:saturday:REQ:true',
         ],
         'time_ranges_sunday' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_opening_hour.timeRanges',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.timeRanges',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_openinghours_domain_model_timerange',

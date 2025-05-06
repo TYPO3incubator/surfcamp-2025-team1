@@ -3,66 +3,66 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2025-04-07UTC09:57:000">
         <header />
         <body>
-            <trans-unit id="tx_opening_hours.pluginTitle">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.pluginTitle">
                 <source>Opening hours</source>
             </trans-unit>
 
             <!-- Time range -->
-            <trans-unit id="tx_opening_hours_time_range">
+            <trans-unit id="tx_openinghours_domain_model_timerange">
                 <source>Time range</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_time_range.startTime">
+            <trans-unit id="tx_openinghours_domain_model_timerange.startTime">
                 <source>Start time</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_time_range.endTime">
+            <trans-unit id="tx_openinghours_domain_model_timerange.endTime">
                 <source>End time</source>
             </trans-unit>
 
             <!-- Company vacation -->
-            <trans-unit id="tx_opening_hours_company_vacation">
+            <trans-unit id="tx_openinghours_domain_model_companyvacation">
                 <source>Company vacation</source>
             </trans-unit>
             <!-- Company vacation -->
-            <trans-unit id="tx_opening_hours_company_vacation.pluginTitle">
+            <trans-unit id="tx_openinghours_domain_model_companyvacation.pluginTitle">
                 <source>Company vacation</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_company_vacation.startDate">
+            <trans-unit id="tx_openinghours_domain_model_companyvacation.startDate">
                 <source>Start date</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_company_vacation.endDate">
+            <trans-unit id="tx_openinghours_domain_model_companyvacation.endDate">
                 <source>End date</source>
             </trans-unit>
 
             <!-- Opening hour -->
-            <trans-unit id="tx_opening_hours_opening_hour">
+            <trans-unit id="tx_openinghours_domain_model_openinghours">
                 <source>Opening hour</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.description">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.description">
                 <source>If not checked, this day is a closing day.</source>
             </trans-unit>
 
-            <trans-unit id="tx_opening_hours_opening_hour.monday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.monday">
                 <source>Monday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.tuesday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.tuesday">
                 <source>Tuesday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.wednesday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.wednesday">
                 <source>Wednesday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.thursday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.thursday">
                 <source>Thursday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.friday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.friday">
                 <source>Friday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.saturday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.saturday">
                 <source>Saturday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.sunday">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.sunday">
                 <source>Sunday</source>
             </trans-unit>
-            <trans-unit id="tx_opening_hours_opening_hour.timeRanges">
+            <trans-unit id="tx_openinghours_domain_model_openinghours.timeRanges">
                 <source>Time ranges</source>
             </trans-unit>
         </body>

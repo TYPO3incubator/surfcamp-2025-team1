@@ -12,9 +12,7 @@ class CompanyVacationController extends ActionController
 {
     public function __construct(
         private readonly CompanyVacationRepository $companyVacationRepository
-    )
-    {
-    }
+    ) {}
 
     public function indexAction(): ResponseInterface
     {

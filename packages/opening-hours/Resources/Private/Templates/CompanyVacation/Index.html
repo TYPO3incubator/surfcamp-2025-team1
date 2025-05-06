@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="companyVacations">
-    Company vacation:
+    <f:translate key="tx_openinghours_domain_model_companyvacation" />
     <f:for as="companyVacation" each="{companyVacations}">
         <f:if condition="{companyVacation.startDate} && {companyVacation.endDate}">
             <f:format.date format="d.m.Y">{companyVacation.startDate}</f:format.date>

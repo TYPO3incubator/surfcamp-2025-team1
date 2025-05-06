@@ -8,7 +8,7 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
     ExtensionUtility::registerPlugin(
         'OpeningHours',
         'OpeningHoursPlugin',
-        'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours.pluginTitle'
+        'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.pluginTitle'
     );
 })();
 
@@ -16,6 +16,6 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
     ExtensionUtility::registerPlugin(
         'OpeningHours',
         'CompanyVacationPlugin',
-        'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_opening_hours_company_vacation.pluginTitle'
+        'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_companyvacation.pluginTitle'
     );
 })();
