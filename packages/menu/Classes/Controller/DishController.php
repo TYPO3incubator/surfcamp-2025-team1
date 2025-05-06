@@ -10,9 +10,7 @@ class DishController extends ActionController
 {
     public function __construct(
         protected DishRepository $dishRepository
-    )
-    {
-    }
+    ) {}
 
     public function listAction(): ResponseInterface
     {

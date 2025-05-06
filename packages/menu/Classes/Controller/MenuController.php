@@ -15,9 +15,7 @@ final class MenuController extends AbstractController {
     public function __construct(
         protected DishRepository $dishRepository,
         protected DrinkRepository $drinkRepository
-    )
-    {
-    }
+    ) {}
 
     public function listAction(): ResponseInterface
     {

@@ -10,9 +10,7 @@ class DrinkController extends ActionController
 {
     public function __construct(
         protected DrinkRepository $drinkRepository
-    )
-    {
-    }
+    ) {}
 
     public function listAction(): ResponseInterface
     {
