@@ -1,0 +1,2 @@
+TCEFORM.tt_content.CType.keepItems >
+//TCEFORM.tt_content.CType.keepItems := addToList(menu_listmenu)
