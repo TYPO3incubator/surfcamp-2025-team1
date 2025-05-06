@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext">
+
+        <body>
+            <trans-unit id="plugin.menu">
+                <source>Menu</source>
+            </trans-unit>
+            <trans-unit id="dish.be_title">
+                <source>Dish</source>
+            </trans-unit>
+            <trans-unit id="dish.title">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="dish.description">
+                <source>Dish description</source>
+            </trans-unit>
+            <trans-unit id="dish.price">
+                <source>Price</source>
+            </trans-unit>
+            <trans-unit id="drink.be_title">
+                <source>Drink</source>
+            </trans-unit>
+            <trans-unit id="drink.title">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="drink.size">
+                <source>Size</source>
+            </trans-unit>
+            <trans-unit id="drink.price">
+                <source>Price</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

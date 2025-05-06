@@ -5302,11 +5302,11 @@
         },
         {
             "name": "typo3-incubator/menu",
-            "version": "dev-develop",
+            "version": "dev-feature/11-Plugin-Menu",
             "dist": {
                 "type": "path",
                 "url": "packages/menu",
-                "reference": "08f3d16b676de24cbcbd9d829d31ad2fa351a2ec"
+                "reference": "6bce7e4187626a57252aa461e68272e45d3bfb07"
             },
             "require": {
                 "typo3/cms-core": "^13.4",
@@ -5321,7 +5321,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Typo3Incubator\\Menu\\": "Classes/"
+                    "TYPO3Incubator\\Menu\\": "Classes/"
                 }
             },
             "license": [
@@ -5340,7 +5340,7 @@
         },
         {
             "name": "typo3-incubator/opening-hours",
-            "version": "dev-develop",
+            "version": "dev-feature/11-Plugin-Menu",
             "dist": {
                 "type": "path",
                 "url": "packages/opening-hours",
@@ -5376,7 +5376,7 @@
         },
         {
             "name": "typo3-incubator/reservations",
-            "version": "dev-develop",
+            "version": "dev-feature/11-Plugin-Menu",
             "dist": {
                 "type": "path",
                 "url": "packages/reservations",
@@ -5417,7 +5417,7 @@
         },
         {
             "name": "typo3-incubator/surfcamp-base",
-            "version": "dev-develop",
+            "version": "dev-feature/11-Plugin-Menu",
             "dist": {
                 "type": "path",
                 "url": "packages/surfcamp-base",
