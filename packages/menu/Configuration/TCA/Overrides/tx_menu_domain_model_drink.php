@@ -2,15 +2,15 @@
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-$myTable = 'tx_menu_domain_model_drink';
+$drinkTable = 'tx_menu_domain_model_drink';
 
-$GLOBALS['TCA'][$myTable]['columns']['categories'] = [
+$GLOBALS['TCA'][$drinkTable]['columns']['categories'] = [
     'config' => [
         'type' => 'category',
     ],
 ];
 
 ExtensionManagementUtility::addToAllTCAtypes(
-    $myTable,
+    $drinkTable,
     'categories'
 );
