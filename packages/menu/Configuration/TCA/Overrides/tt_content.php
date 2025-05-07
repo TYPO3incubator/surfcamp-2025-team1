@@ -10,6 +10,9 @@ defined('TYPO3') or die();
         'Menu',
         'ListMenu',
         'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu',
+        '',
+        'Plugin',
+        'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu.description'
     );
 
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginKey] = 'pi_flexform';
