@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext">
+
+        <body>
+            <trans-unit id="menu.dishes">
+                <source>Dishes</source>
+                <target>Speisen</target>
+            </trans-unit>
+            <trans-unit id="menu.drinks">
+                <source>Drinks</source>
+                <target>Getränke</target>
+            </trans-unit>
+            <trans-unit id="menu.empty">
+                <source>No menu available at the moment.</source>
+                <target>Zur Zeit ist kein Menü verfügbar.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
