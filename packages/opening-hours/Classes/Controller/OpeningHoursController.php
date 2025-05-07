@@ -10,9 +10,20 @@ use TYPO3Incubator\OpeningHours\Domain\Repository\OpeningHoursRepository;
 
 class OpeningHoursController extends ActionController
 {
+    /**
+     * OpeningHours constructor
+     *
+     * @param OpeningHoursRepository $openingHoursRepository
+     */
     public function __construct(
         private readonly OpeningHoursRepository $openingHoursRepository,
     ) {}
+
+    /**
+     * Display opening hours
+     *
+     * @return ResponseInterface
+     */
     public function indexAction(): ResponseInterface
     {
         $openingHours = $this->openingHoursRepository->findAll();

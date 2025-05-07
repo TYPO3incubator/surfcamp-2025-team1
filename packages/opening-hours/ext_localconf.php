@@ -10,18 +10,16 @@ defined('TYPO3') or die('Access denied.');
 
 ExtensionUtility::configurePlugin(
     'OpeningHours',
-    'OpeningHoursPlugin',
+    'OpeningHours',
     [
         OpeningHoursController::class => 'index',
     ],
-    []
 );
 
 ExtensionUtility::configurePlugin(
     'OpeningHours',
-    'CompanyVacationPlugin',
+    'CompanyVacation',
     [
         CompanyVacationController::class => 'index',
     ],
-    []
 );
