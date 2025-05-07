@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+use TYPO3Incubator\OpeningHours\Utility\TcaUtility;
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_companyvacation',
         'label' => 'start_date',
+        'label_userFunc' => TcaUtility::class . '->companyVacationTitle',
         'default_sortby' => 'ORDER BY start_date',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -31,7 +34,6 @@ return [
                 'type' => 'datetime',
                 'format' => 'date',
                 'default' => 0,
-                'disableAgeDisplay' => true,
             ],
         ],
         'end_date' => [
@@ -40,7 +42,6 @@ return [
                 'type' => 'datetime',
                 'format' => 'date',
                 'default' => 0,
-                'disableAgeDisplay' => true,
             ],
         ],
     ],

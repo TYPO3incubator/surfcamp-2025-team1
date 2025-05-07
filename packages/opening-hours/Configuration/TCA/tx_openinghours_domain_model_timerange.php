@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+use TYPO3Incubator\OpeningHours\Utility\TcaUtility;
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange',
         'label' => 'start_time',
+        'label_userFunc' => TcaUtility::class . '->timeRangeTitle',
         'default_sortby' => 'ORDER BY start_time',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
