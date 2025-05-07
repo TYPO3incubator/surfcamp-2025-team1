@@ -9,6 +9,8 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class OpeningHours extends AbstractEntity
 {
+    protected string $title = '';
+
     protected bool $monday = false;
 
     protected bool $tuesday = false;
@@ -22,6 +24,16 @@ class OpeningHours extends AbstractEntity
     protected bool $saturday = false;
 
     protected bool $sunday = false;
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
 
     /**
      * @var ?ObjectStorage<TimeRange>

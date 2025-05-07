@@ -1,8 +1,0 @@
-CREATE TABLE tx_openinghours_domain_model_companyvacation (
-);
-
-CREATE TABLE tx_openinghours_domain_model_timerange (
-);
-
-CREATE TABLE tx_openinghours_domain_model_openinghours (
-);

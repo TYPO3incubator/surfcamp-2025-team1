@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-$GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
+return [
     'ctrl' => [
         'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours',
-        'label' => 'uid',
-        'default_sortby' => 'ORDER BY uid',
+        'label' => 'title',
+        'label_alt' => 'uid',
+        'sortby' => 'uid',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -21,11 +22,19 @@ $GLOBALS['TCA']['tx_openinghours_domain_model_openinghours'] = [
     ],
     'types' => [
         '0' => [
-            'showitem' => '--div--;palette,
+            'showitem' => '--div--;palette, title,
                     --palette--;;monday,palette,--palette--;;tuesday, palette,--palette--;;wednesday, palette,--palette--;;thursday,palette,--palette--;; friday, palette,--palette--;;saturday, palette,--palette--;;sunday',
         ],
     ],
     'columns' => [
+        'title' => [
+            'label' => 'Title',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
+            ],
+        ],
         'monday' => [
             'description' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_openinghours.description',
             'config' => [
