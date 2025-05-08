@@ -38,7 +38,8 @@ return [
             'exclude' => 0,
             'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:dish.price',
             'config' => [
-                'type' => 'input',
+                'type' => 'number',
+                'format' => 'decimal',
                 'size' => 10,
                 'min' => 0.00,
                 'required' => true,
