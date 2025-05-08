@@ -24,7 +24,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'start_date,end_date',
-        'iconfile' => 'EXT:site/Resources/Public/Icons/Extension.svg',
+        'iconfile' => 'EXT:opening_hours/Resources/Public/Icons/Extension.svg',
     ],
     'types' => [
         '0' => [
