@@ -59,6 +59,13 @@
                             </f:format.currency>
                         </span>
                     </f:if>
+                    <f:if condition="{item.categories}">
+                        <p>
+                            <f:for each="{item.categories}" as="category">
+                                {category.title}
+                            </f:for>
+                        </p>
+                    </f:if>
                 </div>
             </li>
         </f:for>
