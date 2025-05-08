@@ -11,7 +11,7 @@ defined('TYPO3') or die();
         'ListMenu',
         'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu',
         '',
-        'Plugin',
+        'plugins',
         'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu.description'
     );
 
