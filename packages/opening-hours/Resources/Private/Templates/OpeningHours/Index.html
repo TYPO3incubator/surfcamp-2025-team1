@@ -1,105 +1,72 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:for as="openingHour" each="{openingHours}">
-        <h3>{openingHour.title}</h3>
-        <f:translate key="tx_openinghours_domain_model_openinghours.monday" />:
-        <f:if condition="{openingHour.monday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesMonday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-        <f:translate key="tx_openinghours_domain_model_openinghours.tuesday" />:
-        <f:if condition="{openingHour.tuesday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesTuesday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-        <f:translate key="tx_openinghours_domain_model_openinghours.wednesday" />:
-        <f:if condition="{openingHour.wednesday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesWednesday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-        <f:translate key="tx_openinghours_domain_model_openinghours.thursday" />:
-        <f:if condition="{openingHour.thursday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesThursday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-        <f:translate key="tx_openinghours_domain_model_openinghours.friday" />:
-        <f:if condition="{openingHour.friday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesFriday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-        <f:translate key="tx_openinghours_domain_model_openinghours.saturday" />:
-        <f:if condition="{openingHour.saturday}">
-            <f:then>
-                <f:for as="timeRange" each="{openingHour.timeRangesSaturday}">
-                    <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                    </f:if>
-                </f:for>
-            </f:then>
-            <f:else>
-                <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-            </f:else>
-        </f:if>
-        <br>
-    <f:translate key="tx_openinghours_domain_model_openinghours.sunday" />:
-    <f:if condition="{openingHour.sunday}">
-        <f:then>
-            <f:for as="timeRange" each="{openingHour.timeRangesSunday}">
-                <f:if condition="{timeRange.startTime} && {timeRange.endTime}">
-                    <f:format.date format="H:i">{timeRange.startTime}</f:format.date> - <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
-                </f:if>
-            </f:for>
-        </f:then>
-        <f:else>
-            <f:translate key="tx_openinghours_domain_model_openinghours.closingDay" />
-        </f:else>
-    </f:if>
+    <h3>{openingHour.title}</h3>
+    <table class="mb-3">
+        <tr>
+            <th class="align-top">
+                <f:translate key="tx_openinghours_domain_model_openinghours.monday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesMonday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.tuesday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesTuesday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.wednesday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesWednesday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.thursday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesThursday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.friday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesFriday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.saturday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesSaturday}"/>
+        </tr>
+        <tr>
+            <th>
+                <f:translate key="tx_openinghours_domain_model_openinghours.sunday"/>
+            </th>
+            <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesSunday}"/>
+        </tr>
+    </table>
 </f:for>
+
+<f:section name="timeRanges">
+    <td>
+        <div class="ms-5">
+            <f:if condition="{timeRanges}">
+                <f:then>
+                    <f:for as="timeRange" each="{timeRanges}">
+                        <f:format.date format="H:i">{timeRange.startTime}</f:format.date>
+                        -
+                        <f:format.date format="H:i">{timeRange.endTime}</f:format.date>
+                        <br>
+                    </f:for>
+                </f:then>
+                <f:else>
+                    <f:translate key="tx_openinghours_domain_model_openinghours.closingDay"/>
+                </f:else>
+            </f:if>
+        </div>
+    </td>
+</f:section>
 
 </html>
 

@@ -38,7 +38,7 @@
                 <source>Opening hour</source>
             </trans-unit>
             <trans-unit id="tx_openinghours_domain_model_openinghours.description">
-                <source>If not checked, this day is a closing day.</source>
+                <source>If no time ranges are defined, this day is a closing day.</source>
             </trans-unit>
 
             <trans-unit id="tx_openinghours_domain_model_openinghours.monday">
