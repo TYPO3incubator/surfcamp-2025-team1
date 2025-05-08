@@ -8,9 +8,6 @@ use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
-/**
- *
- */
 class AbstractMenuItem extends AbstractEntity
 {
     /**
