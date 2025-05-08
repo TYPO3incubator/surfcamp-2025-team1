@@ -3,33 +3,32 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2025-04-07UTC09:57:000">
         <header />
         <body>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.closingDay">
+            <trans-unit id="openingHours.closingDay">
                 <source>Closing day</source>
             </trans-unit>
-
-            <trans-unit id="tx_openinghours_domain_model_openinghours.monday">
+            <trans-unit id="monday">
                 <source>Monday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.tuesday">
+            <trans-unit id="tuesday">
                 <source>Tuesday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.wednesday">
+            <trans-unit id="wednesday">
                 <source>Wednesday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.thursday">
+            <trans-unit id="thursday">
                 <source>Thursday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.friday">
+            <trans-unit id="friday">
                 <source>Friday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.saturday">
+            <trans-unit id="saturday">
                 <source>Saturday</source>
             </trans-unit>
-            <trans-unit id="tx_openinghours_domain_model_openinghours.sunday">
+            <trans-unit id="sunday">
                 <source>Sunday</source>
             </trans-unit>
 
-            <trans-unit id="tx_openinghours_domain_model_companyvacation">
+            <trans-unit id="companyVacation">
                 <source>Company vacation</source>
             </trans-unit>
         </body>

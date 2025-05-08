@@ -6,7 +6,7 @@ use TYPO3Incubator\OpeningHours\Utility\TcaUtility;
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_companyvacation',
+        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:companyVacation',
         'label' => 'start_date',
         'label_userFunc' => TcaUtility::class . '->companyVacationTitle',
         'default_sortby' => 'start_date',
@@ -38,7 +38,7 @@ return [
     ],
     'columns' => [
         'start_date' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_companyvacation.startDate',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:timeRange.startDate',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'date',
@@ -46,7 +46,7 @@ return [
             ],
         ],
         'end_date' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_companyvacation.endDate',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:timeRange.endDate',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'date',
