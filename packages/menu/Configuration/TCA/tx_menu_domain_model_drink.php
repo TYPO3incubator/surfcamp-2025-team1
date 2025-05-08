@@ -29,17 +29,18 @@ return [
             'exclude' => 0,
             'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.size',
             'config' => [
-                'type' => 'input',
+                'type' => 'number',
+                'format' => 'decimal',
                 'size' => 10,
                 'min' => 0.00,
-                'required' => true,
             ],
         ],
         'price' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.price',
             'config' => [
-                'type' => 'input',
+                'type' => 'number',
+                'format' => 'decimal',
                 'size' => 10,
                 'min' => 0.00,
                 'required' => true,
