@@ -3,45 +3,45 @@
     <div itemscope>
         <h3>{openingHour.title}</h3>
         <table class="mb-3">
-            <tr>
+            <tr class="mb-2">
                 <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.monday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesMonday, weekday: 'Mo'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.tuesday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesTuesday, weekday: 'Tu'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.wednesday"/>
                 </th>
                 <f:render section="timeRanges"
                           arguments="{timeRanges: openingHour.timeRangesWednesday, weekday: 'We'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.thursday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesThursday, weekday: 'Th'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.friday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesFriday, weekday: 'Fr'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.saturday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesSaturday, weekday: 'Sa'}"/>
             </tr>
             <tr>
-                <th>
+                <th class="align-top">
                     <f:translate key="tx_openinghours_domain_model_openinghours.sunday"/>
                 </th>
                 <f:render section="timeRanges" arguments="{timeRanges: openingHour.timeRangesSunday, weekday: 'Su'}"/>
@@ -52,7 +52,7 @@
 
 <f:section name="timeRanges">
     <td>
-        <div class="ms-5">
+        <div class="ms-5 mb-1">
             <f:if condition="{timeRanges}">
                 <f:then>
                     <f:for as="timeRange" each="{timeRanges}">

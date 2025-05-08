@@ -1,25 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="companyVacations">
-    <table class="mb-3">
-        <tr>
-            <th class="align-top">
-                <f:translate key="tx_openinghours_domain_model_companyvacation"/>
-            </th>
-            <td>
-                <div class="ms-5">
-                    <f:for as="companyVacation" each="{companyVacations}">
-                        <f:if condition="{companyVacation.startDate} && {companyVacation.endDate}">
-                            <f:format.date format="d.m.Y">{companyVacation.startDate}</f:format.date>
-                            -
-                            <f:format.date format="d.m.Y">{companyVacation.endDate}</f:format.date>
-                            <br>
-                        </f:if>
-                    </f:for>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <h3><f:translate key="tx_openinghours_domain_model_companyvacation"/></h3>
+    <f:for as="companyVacation" each="{companyVacations}">
+        <f:if condition="{companyVacation.startDate} && {companyVacation.endDate}">
+            <f:format.date format="d.m.Y">{companyVacation.startDate}</f:format.date>
+            -
+            <f:format.date format="d.m.Y">{companyVacation.endDate}</f:format.date>
+            <br>
+        </f:if>
+    </f:for>
 </f:if>
 
 </html>
