@@ -45,10 +45,4 @@ class ReviewController extends ActionController
 
         return $this->htmlResponse();
     }
-
-    public function createAction(Review $review): ResponseInterface
-    {
-        $this->reviewRepository->add($review);
-        return $this->redirect('list');
-    }
 }
