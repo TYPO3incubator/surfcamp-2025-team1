@@ -29,38 +29,6 @@ return [
         ],
     ],
     'columns' => [
-        'sys_language_uid' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
-            'config' => [
-                'type' => 'language',
-            ],
-        ],
-        'l10n_parent' => [
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['', 0],
-                ],
-                'foreign_table' => 'tx_reservations_domain_model_reservation',
-                'foreign_table_where' => 'AND {#tx_reservations_domain_model_reservation}.{#pid}=###CURRENT_PID### AND {#tx_reservations_domain_model_reservation}.{#sys_language_uid} IN (-1,0)',
-            ],
-        ],
-        'l10n_diffsource' => [
-            'config' => [
-                'type' => 'passthrough',
-            ],
-        ],
-        'hidden' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
-            'config' => [
-                'type' => 'check',
-            ],
-        ],
         'first_name' => [
             'exclude' => true,
             'label' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.first_name',
