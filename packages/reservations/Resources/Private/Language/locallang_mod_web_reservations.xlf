@@ -15,6 +15,9 @@
             <trans-unit id="reservation.management">
                 <source>Reservation Management</source>
             </trans-unit>
+            <trans-unit id="reservation.create">
+                <source>Create reservation</source>
+            </trans-unit>
 			<trans-unit id="reservation.edit">
 				<source>Edit reservation</source>
 			</trans-unit>

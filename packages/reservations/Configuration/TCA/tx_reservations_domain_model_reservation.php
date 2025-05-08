@@ -35,7 +35,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'required' => true,
+                'eval' => 'trim'
             ],
         ],
         'last_name' => [
@@ -44,7 +45,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required'
+                'required' => true,
+                'eval' => 'trim'
             ],
         ],
         'number_of_persons' => [
@@ -52,7 +54,8 @@ return [
             'label' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.number_of_persons',
             'config' => [
                 'type' => 'input',
-                'eval' => 'int,required'
+                'required' => true,
+                'eval' => 'int'
             ],
         ],
         'telephone' => [
@@ -60,7 +63,8 @@ return [
             'label' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.telephone',
             'config' => [
                 'type' => 'input',
-                'eval' => 'trim,required'
+                'required' => true,
+                'eval' => 'trim'
             ],
         ],
         'email' => [
@@ -68,7 +72,8 @@ return [
             'label' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.email',
             'config' => [
                 'type' => 'input',
-                'eval' => 'trim,email,required'
+                'required' => true,
+                'eval' => 'trim,email'
             ],
         ],
         'reservation_time' => [
@@ -77,7 +82,7 @@ return [
             'config' => [
                 'type' => 'datetime',
                 'dbType' => 'datetime',
-                'nullable' => true,
+                'required' => true
             ],
         ],
     ],
