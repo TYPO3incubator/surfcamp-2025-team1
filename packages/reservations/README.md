@@ -13,6 +13,10 @@ reservations:
 
 Otherwise 0 is used as storagePid.
 
+## Usage
+A reservation form can be displayed by using the form plugin and set the form definition to "Reservation Form".
+The finisher settings must be overwritten. Recipient and sender email must be set.
+
 ## Contributing
 We welcome contributions to this project! If you have suggestions, bug reports, or feature requests, feel free to open an issue.
 
