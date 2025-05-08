@@ -13,7 +13,7 @@
             </trans-unit>
             <trans-unit id="menu.empty">
                 <source>No menu available at the moment.</source>
-                <target>Zur Zeit ist kein Menü verfügbar.</target>
+                <target>Zur Zeit ist keine Menükarte verfügbar.</target>
             </trans-unit>
         </body>
     </file>
