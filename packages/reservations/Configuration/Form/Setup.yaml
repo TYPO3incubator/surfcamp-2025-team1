@@ -1,0 +1,7 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: false
+        allowedExtensionPaths:
+          20: EXT:reservations/Configuration/Form/FormDefinitions/

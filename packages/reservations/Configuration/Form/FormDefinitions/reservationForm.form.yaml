@@ -1,0 +1,192 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: reservationForm
+label: 'Reservation Form'
+prototypeName: standard
+finishers:
+  -
+    identifier: SaveToDatabase
+    options:
+      table: 'tx_reservations_domain_model_reservation'
+      mode: insert
+      databaseColumnMappings:
+        tstamp:
+          value: '{__currentTimestamp}'
+        crdate:
+          value: '{__currentTimestamp}'
+        pid:
+          value: 102
+        reservation_time:
+          value: '{date} {time}'
+      elements:
+        first-name:
+          mapOnDatabaseColumn: 'first_name'
+        last-name:
+          mapOnDatabaseColumn: 'last_name'
+        number-of-persons:
+          mapOnDatabaseColumn: 'number_of_persons'
+        email:
+          mapOnDatabaseColumn: 'email'
+        telephone:
+          mapOnDatabaseColumn: 'telephone'
+  -
+    options:
+      subject: 'New Reservation'
+      recipients:
+      senderAddress: '{email}'
+      senderName: '{first-name}'
+      addHtmlPart: true
+      translation:
+        language: Default
+      title: 'Reservation'
+    identifier: EmailToReceiver
+  -
+    options:
+      message: 'Your reservation has been sent.'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: 'Make a reservation'
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        renderables:
+          -
+            type: Text
+            identifier: first-name
+            label: First name *
+            properties:
+              fluidAdditionalAttributes:
+                minlength: '2'
+                maxlength: '30'
+                required: required
+            validators:
+              -
+                options:
+                  minimum: '2'
+                  maximum: '30'
+                identifier: StringLength
+              -
+                identifier: NotEmpty
+          -
+            type: Text
+            identifier: last-name
+            label: Last name *
+            properties:
+              fluidAdditionalAttributes:
+                minlength: '2'
+                maxlength: '30'
+                required: required
+            validators:
+              -
+                options:
+                  minimum: '2'
+                  maximum: '30'
+                identifier: StringLength
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-2
+        renderables:
+          -
+            type: Number
+            identifier: number-of-persons
+            label: Number of persons *
+            properties:
+              fluidAdditionalAttributes:
+                step: 1
+                required: required
+                min: '1'
+                max: '100'
+            validators:
+              -
+                identifier: Number
+              -
+                identifier: NotEmpty
+              -
+                options:
+                  minimum: '1'
+                  maximum: '100'
+                identifier: NumberRange
+          -
+            type: GridRow
+            identifier: placeholder-1
+      -
+        type: GridRow
+        identifier: gridrow-3
+        renderables:
+          -
+            type: Telephone
+            identifier: telephone
+            label: Telephone number *
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            type: Email
+            identifier: email
+            label: Email address *
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-4
+        renderables:
+          -
+            type: Date
+            identifier: date
+            label: Date *
+            properties:
+              displayFormat: Y-m-d
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            type: SingleSelect
+            identifier: time
+            label: Time *
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              options:
+                '12:00:00': '12:00'
+                '12:30:00': '12:30'
+                '13:00:00': '13:00'
+                '13:30:00': '13:30'
+                '14:00:00': '14:00'
+                '14:30:00': '14:30'
+                '15:00:00': '15:00'
+                '15:30:00': '15:30'
+                '16:00:00': '16:00'
+                '16:30:00': '16:30'
+                '17:00:00': '17:00'
+                '17:30:00': '17:30'
+                '18:00:00': '18:00'
+                '18:30:00': '18:30'
+                '19:00:00': '19:00'
+                '19:30:00': '19:30'
+                '20:00:00': '20:00'
+            validators:
+              -
+                identifier: NotEmpty

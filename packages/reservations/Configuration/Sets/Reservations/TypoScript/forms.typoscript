@@ -1,0 +1,7 @@
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            120 = EXT:reservations/Configuration/Form/Setup.yaml
+        }
+    }
+}
