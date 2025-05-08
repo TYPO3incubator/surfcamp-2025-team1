@@ -2,13 +2,10 @@
     "name": "typo3-incubator/reservations",
     "description": "Enable reservations and their management",
     "type": "typo3-cms-extension",
-    "authors": [
-        {
-            "name": "Marno Schmigotzki",
-            "email": "m.schmigotzk@familie-redlich.de"
-        }
+    "keywords": [
+        "TYPO3 CMS",
+        "reservations"
     ],
-    "keywords": ["TYPO3 CMS"],
     "require": {
         "typo3/cms-core": "^13.4",
         "typo3/cms-rte-ckeditor": "^13.4",
