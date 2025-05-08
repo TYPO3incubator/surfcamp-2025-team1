@@ -7,6 +7,16 @@
 <f:layout name="Module" />
 
 <f:section name="Content">
+    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations')}</f:variable>
+    <div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
+        <div class="module-docheader-bar-column-left">
+            <div class="btn-toolbar" role="toolbar">
+                <be:link.newRecord table="tx_reservations_domain_model_reservation" returnUrl="{returnUrl}" class="btn btn-default" pid="102">
+                    <core:icon identifier="actions-add" /><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.create" />
+                </be:link.newRecord>
+            </div>
+        </div>
+    </div>
     <h1><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.management" /></h1>
     <f:if condition="{reservations}">
         <f:then>
@@ -15,7 +25,11 @@
                     <thead>
                         <tr>
                             <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.reservation_time" /></th>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.first_name" /></th>
                             <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.last_name" /></th>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.telephone" /></th>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.email" /></th>
+                            <th class="align-top"><f:translate key="LLL:EXT:reservations/Resources/Private/Language/locallang_db.xlf:tx_reservations_domain_model_reservation.number_of_persons" /></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -25,11 +39,22 @@
                                 <f:format.date format="d.m.Y - H:i">{reservation.reservationTime}</f:format.date>
                             </td>
                             <td class="align-top">
+                                {reservation.firstName}
+                            </td>
+                            <td class="align-top">
                                 {reservation.lastName}
+                            </td>
+                            <td class="align-top">
+                                {reservation.telephone}
+                            </td>
+                            <td class="align-top">
+                                {reservation.email}
+                            </td>
+                            <td class="align-top">
+                                {reservation.numberOfPersons}
                             </td>
                             <td class="align-top nowrap col-control">
                                 <div class="btn-group">
-                                    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations')}</f:variable>
                                     <be:link.editRecord
                                         uid="{reservation.uid}"
                                         table="tx_reservations_domain_model_reservation"

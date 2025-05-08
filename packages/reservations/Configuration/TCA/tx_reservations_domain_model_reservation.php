@@ -106,7 +106,7 @@ return [
             'config' => [
                 'type' => 'datetime',
                 'dbType' => 'datetime',
-                'nullable' => true,
+                'eval' => 'required'
             ],
         ],
     ],
