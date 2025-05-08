@@ -15,58 +15,6 @@ class OpeningHours extends AbstractEntity
     protected string $title = '';
 
     /**
-     * @var bool
-     */
-    protected bool $monday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $tuesday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $wednesday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $thursday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $friday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $saturday = false;
-
-    /**
-     * @var bool
-     */
-    protected bool $sunday = false;
-
-    /**
-     * @return string
-     */
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param string $title
-     * @return void
-     */
-    public function setTitle(string $title): void
-    {
-        $this->title = $title;
-    }
-
-    /**
      * @var ?ObjectStorage<TimeRange>
      */
     protected ?ObjectStorage $timeRangesMonday = null;
@@ -101,123 +49,32 @@ class OpeningHours extends AbstractEntity
      */
     protected ?ObjectStorage $timeRangesSunday = null;
 
-    /**
-     * @return bool
-     */
-    public function isMonday(): bool
+    public function __construct()
     {
-        return $this->monday;
+        $this->timeRangesMonday = new ObjectStorage();
+        $this->timeRangesTuesday = new ObjectStorage();
+        $this->timeRangesWednesday = new ObjectStorage();
+        $this->timeRangesThursday = new ObjectStorage();
+        $this->timeRangesFriday = new ObjectStorage();
+        $this->timeRangesSaturday = new ObjectStorage();
+        $this->timeRangesSunday = new ObjectStorage();
     }
 
     /**
-     * @param bool $monday
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param string $title
      * @return void
      */
-    public function setMonday(bool $monday): void
+    public function setTitle(string $title): void
     {
-        $this->monday = $monday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isTuesday(): bool
-    {
-        return $this->tuesday;
-    }
-
-    /**
-     * @param bool $tuesday
-     * @return void
-     */
-    public function setTuesday(bool $tuesday): void
-    {
-        $this->tuesday = $tuesday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isWednesday(): bool
-    {
-        return $this->wednesday;
-    }
-
-    /**
-     * @param bool $wednesday
-     * @return void
-     */
-    public function setWednesday(bool $wednesday): void
-    {
-        $this->wednesday = $wednesday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isThursday(): bool
-    {
-        return $this->thursday;
-    }
-
-    /**
-     * @param bool $thursday
-     * @return void
-     */
-    public function setThursday(bool $thursday): void
-    {
-        $this->thursday = $thursday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isFriday(): bool
-    {
-        return $this->friday;
-    }
-
-    /**
-     * @param bool $friday
-     * @return void
-     */
-    public function setFriday(bool $friday): void
-    {
-        $this->friday = $friday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isSaturday(): bool
-    {
-        return $this->saturday;
-    }
-
-    /**
-     * @param bool $saturday
-     * @return void
-     */
-    public function setSaturday(bool $saturday): void
-    {
-        $this->saturday = $saturday;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isSunday(): bool
-    {
-        return $this->sunday;
-    }
-
-    /**
-     * @param bool $sunday
-     * @return void
-     */
-    public function setSunday(bool $sunday): void
-    {
-        $this->sunday = $sunday;
+        $this->title = $title;
     }
 
     /**
