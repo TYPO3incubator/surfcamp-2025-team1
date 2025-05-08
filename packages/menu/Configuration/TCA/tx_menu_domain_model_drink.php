@@ -32,7 +32,6 @@ return [
                 'type' => 'input',
                 'size' => 10,
                 'min' => 0.00,
-                'required' => true,
             ],
         ],
         'price' => [
