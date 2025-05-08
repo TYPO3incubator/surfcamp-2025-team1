@@ -1,4 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="menu-badge" href="EXT:menu/Resources/Public/Css/badge.css" />
 
 <h2>{data.header}</h2>
 <div class="d-flex flex-column flex-md-row">
@@ -60,11 +61,13 @@
                         </span>
                     </f:if>
                     <f:if condition="{item.categories}">
-                        <p>
+                        <div class="d-flex mt-3">
                             <f:for each="{item.categories}" as="category">
-                                {category.title}
+                                <span class="badge">
+                                    {category.title}
+                                </span>
                             </f:for>
-                        </p>
+                        </div>
                     </f:if>
                 </div>
             </li>
