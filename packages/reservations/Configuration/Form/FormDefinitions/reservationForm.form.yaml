@@ -35,7 +35,7 @@ finishers:
     options:
       subject: 'New Reservation'
       recipients:
-      senderAddress: '{email}'
+      senderAddress:
       senderName: '{first-name}'
       addHtmlPart: true
       translation:
