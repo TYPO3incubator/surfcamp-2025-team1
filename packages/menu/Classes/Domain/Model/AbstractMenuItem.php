@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace TYPO3Incubator\Menu\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class AbstractMenuItem extends AbstractEntity
 {
@@ -16,6 +18,11 @@ class AbstractMenuItem extends AbstractEntity
      * @var float
      */
     protected float $price;
+
+    /**
+     * @var ObjectStorage<Category>
+     */
+    protected ObjectStorage $categories;
 
     /**
      * @return string
@@ -49,5 +56,22 @@ class AbstractMenuItem extends AbstractEntity
     public function setPrice(float $price): void
     {
         $this->price = $price;
+    }
+
+    /**
+     * @param ObjectStorage $categories
+     * @return void
+     */
+    public function setCategories(ObjectStorage $categories): void
+    {
+        $this->categories = $categories;
+    }
+
+    /**
+     * @return ObjectStorage<Category>
+     */
+    public function getCategories(): ObjectStorage
+    {
+        return $this->categories;
     }
 }
