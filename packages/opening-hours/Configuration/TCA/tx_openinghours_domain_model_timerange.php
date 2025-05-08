@@ -13,7 +13,7 @@ return [
         'delete' => 'deleted',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'hideTable' => 1,
+        'hideTable' => true,
         'versioningWS' => true,
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
