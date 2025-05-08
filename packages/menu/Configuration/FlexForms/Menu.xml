@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <menu>
+            <ROOT>
+                <sheetTitle>Menu List</sheetTitle>
+                <type>array</type>
+                <el>
+                    <settings.menuDishes>
+                        <label>LLL:EXT:menu/Resources/Private/Language/locallang.xlf:menu.dishes</label>
+                        <config>
+                            <type>group</type>
+                            <internal_type>db</internal_type>
+                            <allowed>tx_menu_domain_model_dish</allowed>
+                            <foreign_table>tx_menu_domain_model_dish</foreign_table>
+                            <size>5</size>
+                        </config>
+                    </settings.menuDishes>
+                    <settings.menuDrinks>
+                        <label>LLL:EXT:menu/Resources/Private/Language/locallang.xlf:menu.drinks</label>
+                        <config>
+                            <type>group</type>
+                            <internal_type>db</internal_type>
+                            <allowed>tx_menu_domain_model_drink</allowed>
+                            <foreign_table>tx_menu_domain_model_drink</foreign_table>
+                            <size>5</size>
+                        </config>
+                    </settings.menuDrinks>
+                </el>
+            </ROOT>
+        </menu>
+    </sheets>
+</T3DataStructure>

@@ -3,6 +3,7 @@
 namespace TYPO3Incubator\Reservations\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 class ReservationRepository extends Repository
@@ -22,9 +23,10 @@ class ReservationRepository extends Repository
     /**
      * Find all current reservations. (>= today)
      *
-     * @return QueryInterface
+     * @return QueryResultInterface|array
      */
-    public function findCurrentReservations(): QueryInterface {
+    public function findCurrentReservations(): QueryResultInterface|array
+    {
         $query = $this->createQuery();
         $query->matching(
             $query->greaterThanOrEqual(

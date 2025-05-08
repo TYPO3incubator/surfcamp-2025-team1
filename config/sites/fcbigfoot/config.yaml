@@ -1,6 +1,8 @@
 base: '%env(SITE_FCBIGFOOT_BASE)%'
 dependencies:
   - typo3-incubator/theme-fcbigfoot
+  - typo3-incubator/menu
+  - typo3-incubator/reservations
 languages:
   -
     title: English
