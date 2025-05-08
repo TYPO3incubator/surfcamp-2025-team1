@@ -35,7 +35,6 @@ finishers:
     options:
       subject: 'New Reservation'
       recipients:
-        test@test.de: Websitebetreiber
       senderAddress: '{email}'
       senderName: '{first-name}'
       addHtmlPart: true
