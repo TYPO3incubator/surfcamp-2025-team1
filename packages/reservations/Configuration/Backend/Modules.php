@@ -13,7 +13,7 @@ return [
         'access' => 'user',
         'path' => '/module/web/reservations',
         'labels' => 'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf',
-        'iconIdentifier' => 'module-list',
+        'iconIdentifier' => 'tx-reservation-svgicon',
         'routes' => [
             '_default' => [
                 'target' => ReservationsController::class . '::listAction',
