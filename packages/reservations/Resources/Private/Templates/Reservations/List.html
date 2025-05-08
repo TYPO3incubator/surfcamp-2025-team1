@@ -7,7 +7,7 @@
 <f:layout name="Module" />
 
 <f:section name="Content">
-    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations')}</f:variable>
+    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations', parameters: {id: storagePid})}</f:variable>
     <div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
         <div class="module-docheader-bar-column-left">
             <div class="btn-toolbar" role="toolbar">
