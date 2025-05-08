@@ -7,7 +7,7 @@ return [
         'crdate' => 'crdate',
         'delete' => 'deleted',
         'default_sortby' => 'title',
-        'iconfile' => 'EXT:menu/Resources/Public/Images/drink.svg',
+        'iconfile' => 'EXT:menu/Resources/Public/Icons/drink.svg',
         'searchFields' => 'title',
         'transOrigPointerField' => 'l18n_parent',
         'transOrigDiffSourceField' => 'l18n_diffsource',
