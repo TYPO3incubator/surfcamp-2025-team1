@@ -34,10 +34,12 @@ final class MenuController extends AbstractController {
         $menuDrinks = $this->getMenuDrinksUids();
         $dishes = $this->fetchDishes($menuDishes);
         $drinks = $this->fetchDrinks($menuDrinks);
+        $currentContentObject = $this->request->getAttribute('currentContentObject');
 
         $this->view->assignMultiple([
-            $dishes,
-            $drinks
+            'dishes' => $dishes,
+            'drinks' => $drinks,
+            'data' => $currentContentObject->data
         ]);
 
         return $this->htmlResponse();

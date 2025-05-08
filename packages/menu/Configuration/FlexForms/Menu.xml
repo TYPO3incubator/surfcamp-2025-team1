@@ -7,7 +7,7 @@
                 <type>array</type>
                 <el>
                     <settings.menuDishes>
-                        <label>Menu Dishes</label>
+                        <label>LLL:EXT:menu/Resources/Private/Language/locallang.xlf:menu.dishes</label>
                         <config>
                             <type>group</type>
                             <internal_type>db</internal_type>
@@ -17,7 +17,7 @@
                         </config>
                     </settings.menuDishes>
                     <settings.menuDrinks>
-                        <label>Menu Drinks</label>
+                        <label>LLL:EXT:menu/Resources/Private/Language/locallang.xlf:menu.drinks</label>
                         <config>
                             <type>group</type>
                             <internal_type>db</internal_type>

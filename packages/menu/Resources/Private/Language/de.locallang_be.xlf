@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext">
+    <file source-language="en" target-language="de" datatype="plaintext">
 
         <body>
             <trans-unit id="plugin.menu">
                 <source>Menu</source>
+                <target>Menü</target>
             </trans-unit>
             <trans-unit id="plugin.menu.description">
                 <source>Selection of dishes and drinks to show in a menu</source>
+                <target>Auswahl an Speisen und Getränken zur Darstellung als Speisekarte</target>
             </trans-unit>
             <trans-unit id="dish.be_title">
                 <source>Dish</source>
-            </trans-unit>
-            <trans-unit id="dish.title">
-                <source>Name</source>
+                <target>Speise</target>
             </trans-unit>
             <trans-unit id="dish.description">
                 <source>Dish description</source>
+                <target>Beschreibung der Speise</target>
             </trans-unit>
             <trans-unit id="dish.price">
                 <source>Price</source>
+                <target>Preis</target>
             </trans-unit>
             <trans-unit id="drink.be_title">
                 <source>Drink</source>
-            </trans-unit>
-            <trans-unit id="drink.title">
-                <source>Name</source>
+                <target>Getränk</target>
             </trans-unit>
             <trans-unit id="drink.size">
                 <source>Size</source>
+                <target>Größe</target>
             </trans-unit>
             <trans-unit id="drink.price">
                 <source>Price</source>
+                <target>Preis</target>
             </trans-unit>
         </body>
     </file>

@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<h2>{data.header}</h2>
+<div class="d-flex flex-column flex-md-row">
+    <f:if condition="{dishes} || {drinks}">
+        <f:then>
+            <f:if condition="{dishes}">
+                <div class="flex-grow-1">
+                    <h3>
+                        <f:translate key="menu.dishes"/>
+                    </h3>
+                    <f:render
+                        section="showItem"
+                        arguments="{items: dishes}"
+                    />
+                </div>
+            </f:if>
+
+            <f:if condition="{drinks}">
+                <div class="flex-grow-1">
+                    <h3>
+                        <f:translate key="menu.drinks"/>
+                    </h3>
+                    <f:render
+                        section="showItem"
+                        arguments="{items: drinks}"
+                    />
+                </div>
+            </f:if>
+        </f:then>
+        <f:else>
+            <em>
+                <f:translate key="menu.empty"/>
+            </em>
+        </f:else>
+    </f:if>
+</div>
+
+<f:section name="showItem">
+    <ul class="p-0">
+        <f:for each="{items}" as="item">
+            <li class="list-unstyled mb-5">
+                <div>
+                    <h4>{item.title}</h4>
+                    <f:if condition="{item.description}">
+                        <p>{item.description}</p>
+                    </f:if>
+                    <f:if condition="{item.size}">
+                        <p>{item.size} ml</p>
+                    </f:if>
+                    <f:if condition="{item.price}">
+                        <span>
+                            <f:format.currency
+                                currencySign="€"
+                                decimalSeparator="."
+                                useDash="true"
+                            >
+                                {item.price}
+                            </f:format.currency>
+                        </span>
+                    </f:if>
+                </div>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
+</html>

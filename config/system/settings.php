@@ -25,6 +25,13 @@ return [
             ],
         ],
     ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [
+                'de',
+            ],
+        ],
+    ],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
