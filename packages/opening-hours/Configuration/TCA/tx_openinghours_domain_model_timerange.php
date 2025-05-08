@@ -42,7 +42,7 @@ return [
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',
-                'default' => 0,
+                'required' => true,
             ],
         ],
         'end_time' => [
@@ -50,7 +50,7 @@ return [
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',
-                'default' => 0,
+                'required' => true,
             ],
         ],
         'content_element' => [

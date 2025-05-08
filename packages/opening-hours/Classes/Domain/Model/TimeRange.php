@@ -9,14 +9,14 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 class TimeRange extends AbstractEntity
 {
     /**
-     * @var \DateTime
+     * @var ?\DateTime
      */
-    protected \DateTime $startTime;
+    protected ?\DateTime $startTime;
 
     /**
-     * @var \DateTime
+     * @var ?\DateTime
      */
-    protected \DateTime $endTime;
+    protected ?\DateTime $endTime;
 
     /**
      * @var int
@@ -28,36 +28,22 @@ class TimeRange extends AbstractEntity
      */
     protected string $weekday = '';
 
-    /**
-     * @return \DateTime
-     */
-    public function getStartTime(): \DateTime
+    public function getStartTime(): ?\DateTime
     {
         return $this->startTime;
     }
 
-    /**
-     * @param \DateTime $startTime
-     * @return void
-     */
-    public function setStartTime(\DateTime $startTime): void
+    public function setStartTime(?\DateTime $startTime): void
     {
         $this->startTime = $startTime;
     }
 
-    /**
-     * @return \DateTime
-     */
-    public function getEndTime(): \DateTime
+    public function getEndTime(): ?\DateTime
     {
         return $this->endTime;
     }
 
-    /**
-     * @param \DateTime $endTime
-     * @return void
-     */
-    public function setEndTime(\DateTime $endTime): void
+    public function setEndTime(?\DateTime $endTime): void
     {
         $this->endTime = $endTime;
     }
