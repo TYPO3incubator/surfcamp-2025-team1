@@ -14,6 +14,8 @@ ExtensionUtility::configurePlugin(
     [
         OpeningHoursController::class => 'index',
     ],
+    [],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
 ExtensionUtility::configurePlugin(
@@ -22,4 +24,6 @@ ExtensionUtility::configurePlugin(
     [
         CompanyVacationController::class => 'index',
     ],
+    [],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
