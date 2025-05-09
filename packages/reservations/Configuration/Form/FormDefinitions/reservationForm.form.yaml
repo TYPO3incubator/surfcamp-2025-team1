@@ -18,6 +18,8 @@ finishers:
           value: '{__currentTimestamp}'
         pid:
           value: 0
+        hidden:
+          value: 1
         reservation_time:
           value: '{date} {time}'
       elements:

@@ -19,6 +19,7 @@ class ReservationRepository extends Repository
     {
         $querySettings = $this->createQuery()->getQuerySettings();
         $querySettings->setRespectStoragePage(false);
+        $querySettings->setIgnoreEnableFields(true);
         $this->setDefaultQuerySettings($querySettings);
     }
 

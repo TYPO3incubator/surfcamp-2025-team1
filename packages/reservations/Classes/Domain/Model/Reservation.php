@@ -12,6 +12,11 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 class Reservation extends AbstractEntity
 {
     /**
+     * @var bool
+     */
+    protected bool $hidden = false;
+
+    /**
      * @var string
      */
     protected string $firstName = '';
@@ -40,6 +45,23 @@ class Reservation extends AbstractEntity
      * @var \DateTime
      */
     protected \DateTime $reservationTime;
+
+    /**
+     * @return bool
+     */
+    public function isHidden(): bool
+    {
+        return $this->hidden;
+    }
+
+    /**
+     * @param bool $hidden
+     * @return void
+     */
+    public function setHidden(bool $hidden): void
+    {
+        $this->hidden = $hidden;
+    }
 
     /**
      * @return string

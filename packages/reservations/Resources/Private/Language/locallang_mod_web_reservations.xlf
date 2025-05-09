@@ -21,6 +21,12 @@
 			<trans-unit id="reservation.edit">
 				<source>Edit reservation</source>
 			</trans-unit>
+            <trans-unit id="reservation.accept">
+                <source>Accept reservation</source>
+            </trans-unit>
+            <trans-unit id="reservation.waiting">
+                <source>Set reservation to waiting</source>
+            </trans-unit>
             <trans-unit id="reservation.cancel">
                 <source>Cancel reservation</source>
             </trans-unit>

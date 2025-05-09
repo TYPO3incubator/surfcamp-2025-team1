@@ -7,7 +7,7 @@
 <f:layout name="Module" />
 
 <f:section name="Content">
-    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations')}</f:variable>
+    <f:variable name="returnUrl">{f:be.uri(route: 'web_reservations', parameters: {id: storagePid})}</f:variable>
     <div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
         <div class="module-docheader-bar-column-left">
             <div class="btn-toolbar" role="toolbar">
@@ -55,6 +55,24 @@
                             </td>
                             <td class="align-top nowrap col-control">
                                 <div class="btn-group">
+                                    <f:if condition="{reservation.hidden} == 1">
+                                        <f:then>
+                                            <a class="btn btn-sm btn-default"
+                                               href="{be:moduleLink(route:'tce_db', query:'data[tx_reservations_domain_model_reservation][{reservation.uid}][hidden]=0', currentUrlParameterName:'redirect')}"
+                                               title="{f:translate(key:'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.accept')}"
+                                            >
+                                                <core:icon identifier="actions-edit-unhide"/>
+                                            </a>
+                                        </f:then>
+                                        <f:else>
+                                            <a class="btn btn-sm btn-default"
+                                               href="{be:moduleLink(route:'tce_db', query:'data[tx_reservations_domain_model_reservation][{reservation.uid}][hidden]=1', currentUrlParameterName:'redirect')}"
+                                               title="{f:translate(key:'LLL:EXT:reservations/Resources/Private/Language/locallang_mod_web_reservations.xlf:reservation.waiting')}"
+                                            >
+                                                <core:icon identifier="actions-edit-hide"/>
+                                            </a>
+                                        </f:else>
+                                    </f:if>
                                     <be:link.editRecord
                                         uid="{reservation.uid}"
                                         table="tx_reservations_domain_model_reservation"
