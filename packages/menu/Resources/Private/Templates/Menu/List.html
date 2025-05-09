@@ -2,7 +2,7 @@
 <f:asset.css identifier="menu-badge" href="EXT:menu/Resources/Public/Css/badge.css" />
 
 <h2>{data.header}</h2>
-<div class="d-flex flex-column flex-md-row">
+<div class="d-flex flex-column flex-md-row gap-md-5">
     <f:if condition="{dishes} || {drinks}">
         <f:then>
             <f:if condition="{dishes}">
@@ -42,14 +42,9 @@
         <f:for each="{items}" as="item">
             <li class="list-unstyled mb-5">
                 <div>
-                    <h4>{item.title}</h4>
-                    <f:if condition="{item.description}">
-                        <p>{item.description}</p>
-                    </f:if>
-                    <f:if condition="{item.size}">
-                        <p>{item.size} ml</p>
-                    </f:if>
-                    <f:if condition="{item.price}">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="m-0">{item.title}</h4>
+                        <f:if condition="{item.price}">
                         <span>
                             <f:format.currency
                                 currencySign="€"
@@ -59,6 +54,13 @@
                                 {item.price}
                             </f:format.currency>
                         </span>
+                        </f:if>
+                    </div>
+                    <f:if condition="{item.description}">
+                        <p>{item.description}</p>
+                    </f:if>
+                    <f:if condition="{item.size}">
+                        <p>{item.size} ml</p>
                     </f:if>
                     <f:if condition="{item.categories}">
                         <div class="d-flex mt-3">
