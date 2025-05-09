@@ -14,14 +14,14 @@ class DataHandlerHook
      * Process the datamap after database operations.
      * Send confirmation mail to customer if reservation is confirmed (hidden = 0).
      *
-     * @param string $status
-     * @param string $table
-     * @param int $id
-     * @param array $fieldArray
+     * @param $status
+     * @param $table
+     * @param $id
+     * @param $fieldArray
      * @param DataHandler $dataHandler
      * @return void
      */
-    public function processDatamap_afterDatabaseOperations(string $status, string $table, int $id, array $fieldArray, DataHandler $dataHandler): void
+    public function processDatamap_afterDatabaseOperations($status, $table, $id, $fieldArray, DataHandler $dataHandler): void
     {
         if ($status === 'update' &&
             $table === 'tx_reservations_domain_model_reservation' &&
