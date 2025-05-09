@@ -23,9 +23,12 @@ class DataHandlerHook
      */
     public function processDatamap_afterDatabaseOperations(string $status, string $table, int $id, array $fieldArray, DataHandler $dataHandler): void
     {
-        if ($status === 'update' && $table === 'tx_reservations_domain_model_reservation' && $fieldArray['hidden'] == 0) {
+        if ($status === 'update' &&
+            $table === 'tx_reservations_domain_model_reservation' &&
+            $fieldArray['hidden'] == 0
+        ) {
             $record = BackendUtility::getRecord($table, $id);
-            
+
             if (!empty($record['email'])) {
                 $this->sendNotification($record);
             }
