@@ -7,7 +7,7 @@ label: 'Reservation Form'
 prototypeName: standard
 finishers:
   -
-    identifier: SaveToDatabase
+    identifier: SaveReservationToDatabaseFinisher
     options:
       table: 'tx_reservations_domain_model_reservation'
       mode: insert
@@ -17,7 +17,7 @@ finishers:
         crdate:
           value: '{__currentTimestamp}'
         pid:
-          value: 102
+          value: 0
         reservation_time:
           value: '{date} {time}'
       elements:

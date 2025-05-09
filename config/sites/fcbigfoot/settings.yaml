@@ -14,3 +14,5 @@ plugin:
       layoutRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Layouts/'
       partialRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Partials/'
       templateRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Templates/'
+reservations:
+  storagePid: 109

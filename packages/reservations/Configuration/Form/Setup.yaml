@@ -5,3 +5,13 @@ TYPO3:
         allowSaveToExtensionPaths: false
         allowedExtensionPaths:
           20: EXT:reservations/Configuration/Form/FormDefinitions/
+      prototypes:
+        standard:
+          finishersDefinition:
+            SaveReservationToDatabaseFinisher:
+              implementationClassName: TYPO3Incubator\Reservations\Domain\Finishers\SaveReservationToDatabaseFinisher
+              formEditor:
+                iconIdentifier: form-finisher
+                label: formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label
+                predefinedDefaults:
+                  options: { }

@@ -6,14 +6,14 @@ use TYPO3Incubator\OpeningHours\Utility\TcaUtility;
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange',
+        'title' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:timeRange',
         'label' => 'start_time',
         'label_userFunc' => TcaUtility::class . '->timeRangeTitle',
         'default_sortby' => 'start_time',
         'delete' => 'deleted',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'hideTable' => 1,
+        'hideTable' => true,
         'versioningWS' => true,
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -24,7 +24,7 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'iconfile' => 'EXT:site/Resources/Public/Icons/Extension.svg',
+        'iconfile' => 'EXT:opening_hours/Resources/Public/Icons/Extension.svg',
     ],
     'types' => [
         '0' => [
@@ -38,19 +38,19 @@ return [
     ],
     'columns' => [
         'start_time' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange.startTime',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:timeRange.startTime',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',
-                'default' => 0,
+                'required' => true,
             ],
         ],
         'end_time' => [
-            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:tx_openinghours_domain_model_timerange.endTime',
+            'label' => 'LLL:EXT:opening_hours/Resources/Private/Language/locallang_be.xlf:timeRange.endTime',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'time',
-                'default' => 0,
+                'required' => true,
             ],
         ],
         'content_element' => [

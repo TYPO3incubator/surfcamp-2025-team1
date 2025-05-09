@@ -1,9 +1,11 @@
 {
     "name": "typo3-incubator/opening-hours",
     "type": "typo3-cms-extension",
-    "description": "Configure opening hours.",
-    "homepage": "https://www.google.de",
-    "keywords": ["TYPO3 CMS"],
+    "description": "Configure and display opening hours.",
+    "keywords": [
+        "TYPO3 CMS",
+        "opening hours"
+    ],
     "require": {
         "typo3/cms-core": "^13.4",
         "typo3/cms-fluid-styled-content": "^13.4",

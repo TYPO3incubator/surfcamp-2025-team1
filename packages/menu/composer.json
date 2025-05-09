@@ -2,6 +2,10 @@
     "name": "typo3-incubator/menu",
     "description": "Organize food and drinks in categories",
     "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "menu"
+    ],
     "require": {
         "typo3/cms-core": "^13.4",
         "typo3/cms-fluid-styled-content": "^13.4",
@@ -13,12 +17,6 @@
             "TYPO3Incubator\\Menu\\": "Classes/"
         }
     },
-    "authors": [
-        {
-            "name": "Julia Miller",
-            "email": "julia.miller@hdnet.de"
-        }
-    ],
     "config": {
         "allow-plugins": {
             "typo3/class-alias-loader": true,

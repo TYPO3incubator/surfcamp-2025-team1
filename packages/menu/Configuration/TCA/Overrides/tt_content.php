@@ -10,7 +10,7 @@ defined('TYPO3') or die();
         'Menu',
         'ListMenu',
         'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu',
-        '',
+        'tx-menu-svgicon',
         'plugins',
         'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:plugin.menu.description'
     );

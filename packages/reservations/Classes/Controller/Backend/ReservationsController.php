@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TYPO3Incubator\Reservations\Controller\Backend;
 
 use Psr\Http\Message\ResponseInterface;
@@ -33,7 +35,11 @@ class ReservationsController extends ActionController
         $moduleTemplate = $this->moduleTemplateFactory->create($request);
 
         $reservations = $this->reservationRepository->findCurrentReservations();
-        $moduleTemplate->assign('reservations', $reservations);
+        $storagePid = $request->getAttribute('site')->getSettings()->get('reservations.storagePid', 0);
+        $moduleTemplate->assignMultiple([
+            'reservations' => $reservations,
+            'storagePid' => $storagePid
+        ]);
 
         return $moduleTemplate->renderResponse('Reservations/List');
     }
