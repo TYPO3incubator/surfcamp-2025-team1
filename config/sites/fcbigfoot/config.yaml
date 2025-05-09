@@ -3,6 +3,7 @@ dependencies:
   - typo3-incubator/theme-fcbigfoot
   - typo3-incubator/menu
   - typo3-incubator/reservations
+  - bootstrap-package/content-elements
 languages:
   -
     title: English
