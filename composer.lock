@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51c0be54f545fd4fd7397a942048ee0e",
+    "content-hash": "7730a77bc418ee4a9059f6f83cb2c676",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5302,7 +5302,7 @@
         },
         {
             "name": "typo3-incubator/menu",
-            "version": "dev-feature/11-Plugin-Menu",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "packages/menu",
@@ -5340,11 +5340,11 @@
         },
         {
             "name": "typo3-incubator/opening-hours",
-            "version": "dev-feature/11-Plugin-Menu",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "packages/opening-hours",
-                "reference": "a33c63acf919a58fda74a1ff2becafba676ff2aa"
+                "reference": "3bda198386a45948df7f3158b3d0370276867415"
             },
             "require": {
                 "typo3/cms-core": "^13.4",
@@ -5376,7 +5376,7 @@
         },
         {
             "name": "typo3-incubator/reservations",
-            "version": "dev-feature/11-Plugin-Menu",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "packages/reservations",
@@ -5417,7 +5417,7 @@
         },
         {
             "name": "typo3-incubator/surfcamp-base",
-            "version": "dev-feature/11-Plugin-Menu",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "packages/surfcamp-base",
@@ -5452,16 +5452,16 @@
         },
         {
             "name": "typo3-incubator/theme-fcbigfoot",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3incubator/theme-fcbigfoot.git",
-                "reference": "27cfffb564fedafbe2cb747bde6e7d03a189b21c"
+                "reference": "801cb5b7dff7b62c3083350a246c95014b890a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3incubator/theme-fcbigfoot/zipball/27cfffb564fedafbe2cb747bde6e7d03a189b21c",
-                "reference": "27cfffb564fedafbe2cb747bde6e7d03a189b21c",
+                "url": "https://api.github.com/repos/TYPO3incubator/theme-fcbigfoot/zipball/801cb5b7dff7b62c3083350a246c95014b890a92",
+                "reference": "801cb5b7dff7b62c3083350a246c95014b890a92",
                 "shasum": ""
             },
             "require": {
@@ -5512,9 +5512,9 @@
             "description": "FC Bigfoot Football Club Theme",
             "support": {
                 "issues": "https://github.com/TYPO3incubator/theme-fcbigfoot/issues",
-                "source": "https://github.com/TYPO3incubator/theme-fcbigfoot/tree/0.0.1"
+                "source": "https://github.com/TYPO3incubator/theme-fcbigfoot/tree/0.0.2"
             },
-            "time": "2025-04-07T07:54:50+00:00"
+            "time": "2025-05-08T22:19:44+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
