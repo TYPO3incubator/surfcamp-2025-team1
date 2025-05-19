@@ -1,0 +1,42 @@
+includes:
+		- vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon
+		- vendor/spaze/phpstan-disallowed-calls/disallowed-execution-calls.neon
+		- vendor/spaze/phpstan-disallowed-calls/disallowed-insecure-calls.neon
+		- vendor/spaze/phpstan-disallowed-calls/disallowed-loose-calls.neon
+parameters:
+    level: max
+    reportUnmatchedIgnoredErrors: false
+    paths:
+      - Classes
+      - Configuration
+    phpVersion: 80300
+    type_coverage:
+      return_type: 100
+      param_type: 100
+      property_type: 100
+    disallowedFunctionCalls:
+      -
+        function:
+          - 'var_dump()'
+          - 'xdebug_break()'
+          - 'debug()'
+        message: 'Use logging instead or remove if it was for debugging purposes.'
+      -
+        function: 'header()'
+        message: 'Use PSR-7 API instead'
+    disallowedStaticCalls:
+      -
+        method:
+          - 'TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump()'
+          - 'TYPO3\CMS\Core\Utility\DebugUtility::debug()'
+        message: 'Use logging instead or remove if it was for debugging purposes.'
+    disallowedSuperglobals:
+      -
+        superglobal:
+          - '$_GET'
+          - '$_POST'
+          - '$_FILES'
+          - '$_SERVER'
+        message: 'Use PSR-7 API instead'
+    ignoreErrors:
+     - '#Property [a-zA-Z0-9\\_]+::\$[a-zA-Z]+ is unused.#'
