@@ -1,7 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:asset.css identifier="menu-badge" href="EXT:menu/Resources/Public/Css/badge.css" />
 
-<h2>{data.header}</h2>
 <div class="d-flex flex-column flex-md-row gap-md-5">
     <f:if condition="{dishes} || {drinks}">
         <f:then>
@@ -60,7 +59,7 @@
                         <p>{item.description}</p>
                     </f:if>
                     <f:if condition="{item.size}">
-                        <p>{item.size} ml</p>
+                        <p>{item.size} L</p>
                     </f:if>
                     <f:if condition="{item.categories}">
                         <div class="d-flex mt-3">
