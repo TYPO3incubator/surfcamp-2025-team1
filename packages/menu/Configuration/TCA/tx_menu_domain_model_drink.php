@@ -25,27 +25,14 @@ return [
                 'required' => true,
             ],
         ],
-        'size' => [
+        'prices' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.size',
+            'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:tx_menu_domain_model_prices',
             'config' => [
-                'type' => 'number',
-                'format' => 'decimal',
-                'size' => 10,
-                'min' => 0.00,
-            ],
-        ],
-        'price' => [
-            'exclude' => 0,
-            'label' => 'LLL:EXT:menu/Resources/Private/Language/locallang_be.xlf:drink.price',
-            'config' => [
-                'type' => 'number',
-                'format' => 'decimal',
-                'size' => 10,
-                'min' => 0.00,
-                'required' => true,
-            ],
-        ],
+                'type' => 'inline',
+                'foreign_table' => 'tx_menu_domain_model_prices',
+            ]
+        ]
     ],
     'types' => [
         '0' => [
